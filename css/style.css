@@ -53,7 +53,6 @@ nav {
 .card {
     padding: 10px;
     border-radius: 20px;
-    margin-bottom: 1rem;
     /* TEST */
     background-color: aqua;
 }
@@ -74,6 +73,7 @@ nav {
 .col {
     /* TEST */
     border: 1px solid red;
+    margin-bottom: 1rem;
 }
 
 /* Testimonials */
@@ -89,6 +89,19 @@ nav {
 
 .column {
     margin-top: 1rem;
+}
+
+.testimonial-col {
+    /* TEST */
+    border: 1px solid red;
+    margin-bottom: 1rem;
+
+}
+/* Benefits */
+
+.benefits {
+    background-color: #9792e4;
+    padding-top: 1rem;
 }
 
 /* ---------------------
