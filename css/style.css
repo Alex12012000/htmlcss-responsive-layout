@@ -34,6 +34,30 @@ nav {
     display: none;
 }
 
+
+/* MAIN */
+
+/* Functionalities */
+
+.functionalities {
+    margin: 2.5rem 0;
+}
+
+.row {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    /* TEST */
+    background-color: aqua;
+}
+
 /* ---------------------
         RESPONSIVE
 ----------------------*/
@@ -50,4 +74,22 @@ nav {
     .hamburger-menu {
         display: none;
     }
+
+    /* MAIN */
+
+    /* Functionalities */
+    .row {
+        justify-content: space-between;
+    }
+
+    .col {
+        width: calc( (100%  / 3 ) - 1.5rem);
+    }
+    
+    .large-col {
+        width: calc(100% / 3 * 2);
+    }
+
+
+
 }
