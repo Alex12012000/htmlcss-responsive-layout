@@ -16,6 +16,10 @@ body {
     margin: 0 auto;
 }
 
+section {
+    margin: 2.5rem 0;
+}
+
 /* HEADER */
 
 header {
@@ -38,10 +42,6 @@ nav {
 /* MAIN */
 
 /* Functionalities */
-
-.functionalities {
-    margin: 2.5rem 0;
-}
 
 .row {
     margin-bottom: 1rem;
@@ -78,17 +78,16 @@ nav {
 
 /* Testimonials */
 
-.testimonials {
-    margin: 2.5rem 0;
-}
-
 .text-area {
     /* TEST */
     background-color: burlywood;
 }
 
 .column {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 1rem;
+    padding: 2rem 0;
 }
 
 .testimonial-col {
@@ -101,9 +100,40 @@ nav {
 
 .benefits {
     background-color: #9792e4;
-    padding-top: 1rem;
 }
 
+/* About Us */
+
+.about-us .columns {
+    justify-content: space-between;
+}
+
+/* Get Starded */
+
+.get-started {
+    background-color: cadetblue;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.get-started .text-area {
+    padding: 1.5rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #333333;
+}
+
+.footer-info {
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.footer-info .row {
+    margin-bottom: 0;
+}
 /* ---------------------
         RESPONSIVE
 ----------------------*/
@@ -138,8 +168,27 @@ nav {
         align-items: center;
     }
 
+    .column {
+        justify-content: space-between;
+    }
+
+    .about-us .card {
+        padding: 10px;
+    }
+
     .columns .col {
         margin: 0.5rem;
     }
     
+    /* Get Started */
+    .get-started .container {
+        width: 50%;
+    }
+
+    /* FOOTER */
+
+    footer .container {
+        width: 40%;
+    }
 }
+
