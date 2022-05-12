@@ -72,9 +72,24 @@ nav {
 }
 
 .col {
+    /* TEST */
     border: 1px solid red;
 }
 
+/* Testimonials */
+
+.testimonials {
+    margin: 2.5rem 0;
+}
+
+.text-area {
+    /* TEST */
+    background-color: burlywood;
+}
+
+.column {
+    margin-top: 1rem;
+}
 
 /* ---------------------
         RESPONSIVE
@@ -84,15 +99,6 @@ nav {
 
 @media screen and (min-width: 768px) {
     
-    /* Header */
-    
-    .main-menu {
-        display: inline-block;
-    }
-    .hamburger-menu {
-        display: none;
-    }
-
     /* MAIN */
 
     /* Functionalities */
@@ -110,8 +116,8 @@ nav {
 
     /* Planning */
 
-    .planning {
-        padding
+    .columns .container {
+        width: 100%;
     }
 
     .columns {
