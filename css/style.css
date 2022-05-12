@@ -43,7 +43,7 @@ nav {
 
 /* Functionalities */
 
-.row {
+.row, .bottom-row {
     margin-bottom: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -145,7 +145,7 @@ footer {
     /* MAIN */
 
     /* Functionalities */
-    .row {
+    .row, .bottom-row{
         justify-content: space-between;
     }
 
@@ -154,9 +154,12 @@ footer {
     }
     
     .large{
-        width: calc( ( ( 100% / 3 ) * 2) - 0.75rem);
+        width: calc( ( ( 100% /  3) * 2) - 0.75rem);
     }
 
+    .bottom-row .col {
+        width: calc( ( 100%  / 3 ) - 0.75rem);
+    }
     /* Planning */
 
     .columns .container {
@@ -180,9 +183,15 @@ footer {
         margin: 0.5rem;
     }
     
+    /* Benefits */
+
+    .benefits .col {
+        width: calc( ( 100%  / 2 ) - 1.5rem);
+    }
+
     /* Get Started */
     .get-started .container {
-        width: 50%;
+        width: 60%;
     }
 
     /* FOOTER */
@@ -192,3 +201,10 @@ footer {
     }
 }
 
+/* Desktop */
+
+@media screen and (min-width: 992px) {
+    .benefits .col {
+        width: calc( ( 100%  / 3 ) - 1rem);
+    }
+}
