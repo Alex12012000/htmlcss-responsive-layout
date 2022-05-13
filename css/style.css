@@ -20,6 +20,15 @@ section {
     margin: 2.5rem 0;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
 /* HEADER */
 
 header {
@@ -38,6 +47,10 @@ nav {
     display: none;
 }
 
+.hamburger-menu {
+    color: white;
+    font-size: 25px;
+}
 
 /* MAIN */
 
@@ -55,6 +68,11 @@ nav {
     border-radius: 20px;
     /* TEST */
     background-color: aqua;
+}
+
+.card h3 {
+    color: #0084fd;
+    font-size: 20px;
 }
 
 
@@ -154,7 +172,7 @@ footer {
     }
     
     .large{
-        width: calc( ( ( 100% /  3) * 2) - 0.75rem);
+        width: calc( ( ( 100% /  3) * 2) - 0.5rem);
     }
 
     .bottom-row .col {
@@ -204,6 +222,40 @@ footer {
 /* Desktop */
 
 @media screen and (min-width: 992px) {
+    
+    /* Header */
+    .main-menu {
+        display: inline-block;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+    
+    .main-menu {
+        width: 50%;
+    }
+
+    .main-menu ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .btn {
+        padding: 0.5rem;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .btn a {
+        color: black;
+    }
+
+    
+
+    /* Benefi-ts */
+    
     .benefits .col {
         width: calc( ( 100%  / 3 ) - 1rem);
     }
