@@ -16,6 +16,11 @@ body {
     margin: 0 auto;
 }
 
+img {
+    width: 100%;
+    display: block;
+}
+
 section {
     margin: 2.5rem 0;
 }
@@ -27,6 +32,10 @@ a {
 
 ul {
     list-style-type: none;
+}
+
+.centered {
+    text-align: center;
 }
 
 /* HEADER */
@@ -64,15 +73,55 @@ nav {
 
 
 .card {
-    padding: 10px;
+    padding: 2rem 2rem 0 2rem;
     border-radius: 20px;
-    /* TEST */
-    background-color: aqua;
+    background-color: #b5ddff;
 }
 
-.card h3 {
+
+.text {
+    padding-bottom: 2rem;
+}
+
+.text h3 {
     color: #0084fd;
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+
+.text p {
+    font-weight: 500;
+    color: #5a6e7f;
+    
+}
+
+.blue-btn {
+    background-color: #0084fd;
+    padding: 0.75rem 5rem;
+    border-radius: 25px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.blue-btn i {
     font-size: 20px;
+}
+
+.right-sidecard {
+    display: flex;
+    justify-content: center;
+}
+.right-sidecard img {
+    margin-top: 3rem;
+    width: 80%;
+}
+
+.top-icons i {
+    color: #0084fd;
+    font-size: 60px;
+    margin-bottom: 2rem;
 }
 
 
@@ -89,8 +138,6 @@ nav {
 }
 
 .col {
-    /* TEST */
-    border: 1px solid red;
     margin-bottom: 1rem;
 }
 
@@ -178,6 +225,11 @@ footer {
     .bottom-row .col {
         width: calc( ( 100%  / 3 ) - 0.75rem);
     }
+
+    .card {
+        height: 100%;
+    }
+
     /* Planning */
 
     .columns .container {
@@ -252,9 +304,21 @@ footer {
         color: black;
     }
 
-    
+    /* Functionalities */
 
-    /* Benefi-ts */
+    .big {
+        display: flex;
+    }
+
+    .right-sidecard {
+        margin: 0 4rem;
+    }
+
+    .right-sidecard img {
+        width: 150%;
+    }
+
+    /* Benefits */
     
     .benefits .col {
         width: calc( ( 100%  / 3 ) - 1rem);
