@@ -38,6 +38,10 @@ ul {
     text-align: center;
 }
 
+h2 {
+    color: white;
+}
+
 /* HEADER */
 
 header {
@@ -102,7 +106,7 @@ nav {
     margin-top: 20px;
     text-align: center;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .blue-btn i {
@@ -141,11 +145,77 @@ nav {
     margin-bottom: 1rem;
 }
 
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.left img {
+    width: 80%;
+}
+
+.planning-text {
+    margin: 2rem 0;
+}
+
+.planning-text h2 {
+    margin: 2rem 0;
+}
+
+.planning-text p {
+    color: white;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+.plan {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.plan h3 {
+    margin: 1rem 0;
+}
+
+.plan p {
+    font-style: italic;
+    color: black;
+}
+
+.rounded-arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #9792e4;
+    margin: 2rem 0;
+}
+
+.rounded-arrow i {
+    color: black;
+    line-height: 50px;
+    font-size: 20px;
+}
+
 /* Testimonials */
 
 .text-area {
-    /* TEST */
-    background-color: burlywood;
+    text-align: center;
+}
+
+.text-area h2{
+    font-size: 30px;
+    color: #9792e4;
+    margin: 1rem 0;
+}
+
+
+.text-area span, p {
+    font-size: 20px;
 }
 
 .column {
@@ -153,14 +223,49 @@ nav {
     flex-wrap: wrap;
     margin-top: 1rem;
     padding: 2rem 0;
+    
 }
 
 .testimonial-col {
-    /* TEST */
-    border: 1px solid red;
     margin-bottom: 1rem;
-
 }
+
+.testimonial-card {
+    background-color: #9792e4;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.testimonial {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.content i {
+    margin: 0 0.5rem;
+    font-size: 25px;
+}
+.content p {
+    font-size: 20px;
+    padding: 1rem 0;
+}
+
+.content span {
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
 /* Benefits */
 
 .benefits {
@@ -232,18 +337,12 @@ footer {
 
     /* Planning */
 
-    .columns .container {
-        width: 100%;
-    }
 
     .columns {
         justify-content: center;
         align-items: center;
     }
 
-    .column {
-        justify-content: space-between;
-    }
 
     .about-us .card {
         padding: 10px;
@@ -251,6 +350,21 @@ footer {
 
     .columns .col {
         margin: 0.5rem;
+        width: 100%;
+    }
+    
+    
+    /* Testimonials */
+
+    .testimonial-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    .content {
+        margin-left: 2rem;
     }
     
     /* Benefits */
@@ -315,9 +429,21 @@ footer {
     }
 
     .right-sidecard img {
-        width: 150%;
+        width: 200%;
     }
 
+
+    /* Planning */
+
+    .columns .col {
+        width: calc(100% / 2 - 10rem);
+    }
+
+    .right {
+        transform: scale(0.7);
+        align-self: flex-end;
+    }
+   
     /* Benefits */
     
     .benefits .col {
